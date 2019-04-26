@@ -1,0 +1,8 @@
+<h1>Edit <%= link_to @student.full_name, @student %></h1><br>
+
+<%= form_for @student do |f| %>
+  First Name: <%= f.text_field :first_name %><br>
+  Last Name: <%= f.text_field :last_name %><br>
+  <%= f.collection_select :school_class_id, SchoolClass.all, :id, :title %><br>
+  <%= f.submit "Edit Student" %>
+<% end %>

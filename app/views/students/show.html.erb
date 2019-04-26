@@ -1,0 +1,11 @@
+<h1><%= @student.full_name %></h1>
+<p>School Class: <%= link_to @student.school_class.title, @student.school_class %>
+</p><br>
+
+<%= link_to "Edit this Student",  edit_student_path(@student)%><br><br>
+
+<%= link_to "Students Index", students_path %><br><br>
+
+<%= @student.attributes %>
+
+<%= button_to "Delete this Student", @student, method: "delete"%>
