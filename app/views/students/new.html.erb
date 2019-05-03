@@ -4,5 +4,5 @@
   First Name: <%= f.text_field :first_name %><br>
   Last Name: <%= f.text_field :last_name %><br>
   <%= f.collection_select :school_class_id, SchoolClass.all, :id, :title %><br>
-  <%= f.submit "Create Student" %>
+  <%= f.submit %>
 <% end %>
